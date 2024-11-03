@@ -14,10 +14,12 @@
   "dependencies": {
     "@cucumber/cucumber": "^11.0.1",
     "@cucumber/pretty-formatter": "^1.0.1",
+    "@reportportal/agent-js-cucumber": "^5.5.0",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
     "dotenv": "^16.4.5",
     "node-fetch": "^3.3.2",
-    "octokit": "^4.0.2"
+    "octokit": "^4.0.2",
+    "reportportal-client": "^5.5.0"
   }
 }
