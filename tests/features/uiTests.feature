@@ -2,7 +2,7 @@ Feature: GitHub UI Test
 
   Scenario: Check if landing page can be loaded
     Given I am on the landing page
-    Then I should see the title "GitHub: Let’s build from here · GitHub"
+    Then I should see the title "GitHub · Build and ship software on a single, collaborative platform · GitHub"
     And I should see the GitHub logo
     And I should see the search button
     And I should see the sign in button

@@ -1,0 +1,14 @@
+{
+    "apiKey": "API_KEY",
+    "endpoint": "https://demo.reportportal.io/api/v1",
+    "launch": "Szakdolgozat reportportal teszt.",
+    "project": "jelenszky_personal",
+    "description": "Testing GitHub API and UI",
+    "attributes": [
+      {
+        "key": "launchAttributeKey",
+        "value": "launchAttributeValue"
+      }
+    ],
+    "takeScreenshot": "onFailure"
+  }

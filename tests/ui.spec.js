@@ -14,7 +14,7 @@ test('Check if landing page can be loaded', async ({ page }) => {
     await landingPage.goto();
 
     // Expect a title "to contain" a substring.
-    await expect(page).toHaveTitle('GitHub: Let’s build from here · GitHub');
+    await expect(page).toHaveTitle('GitHub · Build and ship software on a single, collaborative platform · GitHub');
 
     // You can also use other elements defined in your page object
     // For example, check if the GitHub logo is visible
@@ -32,14 +32,17 @@ test('Check if test user can log in', async ({ page }) => {
     // Use methods from LandingPage class
     await landingPage.goto();
    
-    // Expect 'Sign in' button to be visible
+    // Click on the 'Sign in' button
     await expect(landingPage.signIn).toBeVisible();
+    // Expect login page header to be visible
     await landingPage.clickSignInButton();
 
+    // Log in with test user credentials
     await expect(loginPage.headerText).toBeVisible();
     await loginPage.loginWithTestUserCredentials();
-
+    // Expect home page header to be visible after log in
     await expect(homePage.headerText).toBeVisible();
+    // Check visibility of 'Create Menu' button and 'Search Field' on home page
     await expect(homePage.createMenuButton).toBeVisible();
     await expect(homePage.searchField).toBeVisible();
    });
